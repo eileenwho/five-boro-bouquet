@@ -26,7 +26,9 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     </header>
 
-    <main id="content" class="main-content" role="main">
+    
+    <!-- Side navigation -->
+    <div class="sidenav">
       {% for item in site.data.pages_list.toc %}
         <h3>{{ item.title }}</h3>
           <ul>
@@ -35,7 +37,12 @@
             {% endfor %}
           </ul>
       {% endfor %}
+    </div>
+
+    <!-- Page content -->
+    <div id="content" class="main-content" role="main">
       {{ content }}
+    </div>      
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
