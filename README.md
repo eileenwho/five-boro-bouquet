@@ -38,6 +38,9 @@ Using https://github.com/pages-themes/cayman
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
+### Github Pages Setup
+Set website to be built from master branch /docs directory only.
+
 ### References
 https://jekyllrb.com/docs/pages/
 https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
