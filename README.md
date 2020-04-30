@@ -41,4 +41,5 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### References
 https://jekyllrb.com/docs/pages/
 https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+http://jmcglone.com/guides/github-pages/
 
