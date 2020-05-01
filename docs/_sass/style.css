@@ -30,6 +30,11 @@
   color: #10de65;
 }
 
+/* unordered list w/ no bullets for sidenav */
+ul.sidenav {
+  list-style-type: none;
+}
+
 /* https://jekyllrb.com/tutorials/navigation/#scenario-6-applying-the-active-class-for-the-current-page */
 /* .result li.active a {
     color: lightgray;
