@@ -1,5 +1,6 @@
 toc:
-- title: NYC
+- page: NYC
+  url: https://eileenwho.github.io/five-boro-bouquet/index.html
   subfolderitems:
   - page: By Boro
     url: https://eileenwho.github.io/five-boro-bouquet/byboro.html
@@ -10,3 +11,5 @@ toc:
       url: https://eileenwho.github.io/five-boro-bouquet/brooklyn.html
     - page: Queens
       url: https://eileenwho.github.io/five-boro-bouquet/queens.html
+- page: About
+  url: https://eileenwho.github.io/five-boro-bouquet/about.html
