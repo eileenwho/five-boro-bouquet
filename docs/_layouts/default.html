@@ -33,11 +33,13 @@
         <h3>{{ item.title }}</h3>
             {% for entry in item.subfolderitems %}
               <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+               {% for subentry in item.subsubfolderitems %}
+                  <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+               {% endfor %}
             {% endfor %}
       {% endfor %}
     </div>
 <!--     add text indent with another div class-->
-
 
     <!-- Page content -->
     <div id="content" class="main-content" role="main">
