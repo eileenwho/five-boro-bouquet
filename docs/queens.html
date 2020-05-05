@@ -15,19 +15,31 @@ title: Queens
     img.src="images/queens/White.png";
     return false;
     }
-    function changeImage(color)
+    function changeImageGreen()
     {
     var img = document.getElementById("graph");
-    if (color == "white") {
-      img.src="images/queens/White.png";
-    } else if (color == "Red") {
-      img.src="images/queens/Red.png";
-    }  else if (color == "white") {
-      img.src="images/queens/Green.png";
-    }
-    
+    img.src="images/queens/Green.png";
     return false;
     }
+        function changeImageRed()
+    {
+    var img = document.getElementById("graph");
+    img.src="images/queens/Red.png";
+    return false;
+    }
+//     function changeImage(color)
+//     {
+//     var img = document.getElementById("graph");
+//     if (color == "white") {
+//       img.src="images/queens/White.png";
+//     } else if (color == "Red") {
+//       img.src="images/queens/Red.png";
+//     }  else if (color == "white") {
+//       img.src="images/queens/Green.png";
+//     }
+    
+//     return false;
+//     }
    
 
 </script>
@@ -39,9 +51,9 @@ title: Queens
     <img id="graph" src="images/queens/Queens.png" alt="TODO:alternate text">
     <br>
 <!--     <button id="White" onclick="changeImageWhite();">White Flowers</button> -->
-    <button id="white" onclick="changeImage("white");">White Flowers</button>
-    <button id="green" onclick="changeImage("green");">Green Flowers</button>
-    <button id="red" onclick="changeImage("red");">Red Flowers</button>
+    <button id="white" onclick="changeImageWhite();">White Flowers</button>
+    <button id="green" onclick="changeImageGreen();">Green Flowers</button>
+    <button id="red" onclick="changeImageRed();">Red Flowers</button>
 <!--    try this.id -->
     <p>
     text
