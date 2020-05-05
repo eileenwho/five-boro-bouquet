@@ -15,6 +15,20 @@ title: Queens
     img.src="images/queens/White.png";
     return false;
     }
+    function changeImage(color)
+    {
+    var img = document.getElementById("graph");
+    if (color == "white") {
+      img.src="images/queens/White.png";
+    } else if (color == "Red") {
+      img.src="images/queens/Red.png";
+    }  else if (color == "white") {
+      img.src="images/queens/Green.png";
+    }
+    
+    return false;
+    }
+   
 
 </script>
     <meta charset="utf-8">
@@ -23,8 +37,12 @@ title: Queens
   <body>
     <h1>Queens</h1>
     <img id="graph" src="images/queens/Queens.png" alt="TODO:alternate text">
-    <br><br><br>
-    <button id="White" onclick="changeImageWhite();">Click to change image!</button>
+    <br>
+<!--     <button id="White" onclick="changeImageWhite();">White Flowers</button> -->
+    <button id="white" onclick="changeImage("white");">White Flowers</button>
+    <button id="green" onclick="changeImage("green");">Green Flowers</button>
+    <button id="red" onclick="changeImage("red");">Red Flowers</button>
+<!--    try this.id -->
     <p>
     text
     </p>
