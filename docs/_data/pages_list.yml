@@ -3,13 +3,18 @@ toc:
   url: https://eileenwho.github.io/five-boro-bouquet/index.html
   subfolderitems:
   - page: By Boro
-    url: https://eileenwho.github.io/five-boro-bouquet/byboro.html
+    url: https://eileenwho.github.io/five-boro-bouquet/pages/byboro.html
     subsubfolderitems:
-    - page: Astoria
-      url: https://eileenwho.github.io/five-boro-bouquet/astoria.html
     - page: Brooklyn
-      url: https://eileenwho.github.io/five-boro-bouquet/brooklyn.html
+      url: https://eileenwho.github.io/five-boro-bouquet/pages/brooklyn.html
+    - page: Bronx
+      url: https://eileenwho.github.io/five-boro-bouquet/pages/bronx.html
+    - page: Manhattan
+      url: https://eileenwho.github.io/five-boro-bouquet/pages/manhattan.html
     - page: Queens
-      url: https://eileenwho.github.io/five-boro-bouquet/queens.html
+      url: https://eileenwho.github.io/five-boro-bouquet/pages/queens.html
+      subsubsubfolderitems:
+        - page: By Neighborhood
+          url: https://eileenwho.github.io/five-boro-bouquet/pages/queensbyneighborhood.html
 - page: About
-  url: https://eileenwho.github.io/five-boro-bouquet/about.html
+  url: https://eileenwho.github.io/five-boro-bouquet/pages/about.html

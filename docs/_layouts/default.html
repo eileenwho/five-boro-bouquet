@@ -43,8 +43,16 @@
                       {% if entry.subsubfolderitems[0] %}
                       <ul>
                         {% for subentry in entry.subsubfolderitems %}
-                        <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-                        {% endfor %}
+                      	<li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                      {% if subentry.subsubsubfolderitems[0] %}
+                      <ul>
+
+			    {% for subsubentry in subentry.subsubsubfolderitems %}
+			    <li><a href="{{ subsubentry.url }}">{{ subentry.page }} </a></li>
+			    {% endfor %}
+                      </ul>
+                      {% endif %}
+			{% endfor %}
                       </ul>
                       {% endif %}
                 {% endfor %}
