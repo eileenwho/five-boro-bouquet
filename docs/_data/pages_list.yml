@@ -4,7 +4,7 @@ toc:
   subfolderitems:
   - page: By Boro
     url: https://eileenwho.github.io/five-boro-bouquet/pages/byboro.html
-    subsubfolderitems:
+    subfolderitems:
     - page: Brooklyn
       url: https://eileenwho.github.io/five-boro-bouquet/pages/brooklyn.html
     - page: Bronx
@@ -13,7 +13,7 @@ toc:
       url: https://eileenwho.github.io/five-boro-bouquet/pages/manhattan.html
     - page: Queens
       url: https://eileenwho.github.io/five-boro-bouquet/pages/queens.html
-      subsubsubfolderitems:
+      subfolderitems:
         - page: By Neighborhood
           url: https://eileenwho.github.io/five-boro-bouquet/pages/queensbyneighborhood.html
 - page: About
