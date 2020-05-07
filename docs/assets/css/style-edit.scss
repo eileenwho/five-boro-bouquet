@@ -10,7 +10,8 @@ $header-bg-color-three: #fffb01 !important;
 $header-bg-color-four: #ec94de !important;
 $header-bg-color-five: #d61212 !important;
 
- @import "{{ site.theme }}";
+//  @import "{{ site.theme }}";
+@import 'jekyll-theme-cayman';
 // updating cayman theme
 
 
