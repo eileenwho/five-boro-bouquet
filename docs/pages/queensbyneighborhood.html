@@ -7,10 +7,39 @@ title: Queens By Neighborhood
 <!doctype html>
 <html>
   <head>
+    <script> 
+      let img_srcs = {};
+      img_srcs["all"] = "../images/queens/QueensByNeighborhood.png";
+      img_srcs["Arvene"] = "../images/queens/neighborhoods/Arvene_Grid.png";
+      img_srcs["Bayside"] = "../images/queens/neighborhoods/Bayside_Grid.png";
+      img_srcs["Bellerose"] = "../images/queens/neighborhoods/Bellerose_Grid.png";
+      img_srcs["Breezy_Point"] = "../images/queens/neighborhoods/Breezy_Point_Grid.png";
+
+
+
+      function changeImage(clicked_id)
+      {
+        var img = document.getElementById("graph");
+        img.src=img_srcs[clicked_id];
+      }
+      </script>
+
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
   </head>
   <body>
     <img src="../images/queens/QueensByNeighborhood.png">
+    <br>
+    <button id="all" onclick="changeImage(this.id);">All Neighborhoods</button>
+    <button id="Arvene" onclick="changeImage(this.id);">Arvene</button>
+    <button id="Bayside" onclick="changeImage(this.id);">Bayside</button>
+    <button id="Bellerose" onclick="changeImage(this.id);">Bellerose</button>
+    <button id="Breezy_Point" onclick="changeImage(this.id);">Breezy Point</button>
   </body>
 </html>
+
+      <!-- img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+
+
+
+<button id="change1" onclick="changeImage(this.id);">change1</button> -->
