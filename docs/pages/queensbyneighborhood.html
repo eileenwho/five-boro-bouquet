@@ -7,50 +7,36 @@ title: Queens By Neighborhood
 <html>
   <head>
     <script> 
-          let img_srcs = {};
-    img_srcs["all"] = "../images/queens/Queens.png";
-    img_srcs["red"] = "../images/queens/Red.png";
-    img_srcs["darkpink"] = "../images/queens/Dark_pink.png";
-    img_srcs["lightpink"] = "../images/queens/Light_pink.png";
-    img_srcs["lightyellow"] = "../images/queens/Light_yellow.png";
-    img_srcs["yellowgreen"] = "../images/queens/Yellowgreen.png";
-    img_srcs["green"] = "../images/queens/Green.png";
-    img_srcs["white"] = "../images/queens/White.png";
-    function changeImage(clicked_id)
-    {
-      var img = document.getElementById("graph");
-      img.src=img_srcs[clicked_id];
-    }
-      // let img_srcs = {};
-      // img_srcs["all"] = "../images/queens/QueensByNeighborhood.png";
-      // img_srcs["red"] = "../images/queens/Red.png";
-      // img_srcs["arvene"] = "../images/queens/neighborhoods/Arvene_Grid.png";
-      // img_srcs["bayside"] = "../images/queens/neighborhoods/Bayside_Grid.png";
-      // img_srcs["bellerose"] = "../images/queens/neighborhoods/Bellerose_Grid.png";
-      // img_srcs["breezy_point"] = "../images/queens/neighborhoods/Breezy_Point_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+
+      let img_srcs = {};
+      img_srcs["all"] = "../images/queens/QueensByNeighborhood.png";
+      img_srcs["Arvene"] = "../images/queens/neighborhoods/Arvene_Grid.png";
+      img_srcs["Bayside"] = "../images/queens/neighborhoods/Bayside_Grid.png";
+      img_srcs["Bellerose"] = "../images/queens/neighborhoods/Bellerose_Grid.png";
+      img_srcs["Breezy_Point"] = "../images/queens/neighborhoods/Breezy_Point_Grid.png";
+      img_srcs["Cambria_Heights"] = "../images/queens/neighborhoods/Cambria_Heights_Grid.png";
+      img_srcs["East_Elmhurst"] = "../images/queens/neighborhoods/East_Elmhurst_Grid.png";
+      img_srcs["Far_Rockaway"] = "../images/queens/neighborhoods/Far_Rockaway_Grid.png";
+      img_srcs["Floral_Park"] = "../images/queens/neighborhoods/Floral_Park_Grid.png";
+      img_srcs["Glen_Oaks"] = "../images/queens/neighborhoods/Glen_Oaks_Grid.png";
+      img_srcs["Howard_Beach"] = "../images/queens/neighborhoods/Howard_Beach_Grid.png";
+      img_srcs["Inwood"] = "../images/queens/neighborhoods/Inwood_Grid.png";
+      img_srcs["Jackson_Heights"] = "../images/queens/neighborhoods/Jackson_Heights_Grid.png";
+      img_srcs["Kew_Gardens"] = "../images/queens/neighborhoods/Kew_Gardens_Grid.png";
+      img_srcs["Little_Neck"] = "../images/queens/neighborhoods/Little_Neck_Grid.png";
+      img_srcs["Long_Island_City"] = "../images/queens/neighborhoods/Long_Island_City_Grid.png";
+      img_srcs["Middle_Village"] = "../images/queens/neighborhoods/Middle_Village_Grid.png";
+      img_srcs["New_Hyde"] = "../images/queens/neighborhoods/New_Hyde_Grid.png";
+      img_srcs["Rego"] = "../images/queens/neighborhoods/Rego_Grid.png";
+      img_srcs["Rosedale"] = "../images/queens/neighborhoods/Rosedale_Grid.png";
+      img_srcs["Woodside"] = "../images/queens/neighborhoods/Woodside_Grid.png";
 
 
-      // function changeImage(clicked_id)
-      // {
-      //   var img = document.getElementById("graph");
-      //   img.src=img_srcs[clicked_id];
-      // }
+      function changeImage(clicked_id)
+      {
+        var img = document.getElementById("graph");
+        img.src=img_srcs[clicked_id];
+      }
 
       </script>
 
@@ -58,36 +44,28 @@ title: Queens By Neighborhood
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <img src="../images/queens/QueensByNeighborhood.png">
+    <img id="graph" src="../images/queens/QueensByNeighborhood.png">
     <br>
-    <button id="all" onclick="changeImage(this.id);">All Flowers</button>
-    <button id="red" onclick="changeImage(this.id);">Red Flowers</button>
-    <button id="darkpink" onclick="changeImage(this.id);">Dark Pink Flowers</button>
-    <button id="lightpink" onclick="changeImage(this.id);">Light Pink Flowers</button>   
-    <button id="lightyellow" onclick="changeImage(this.id);">Light Yellow Flowers</button>
-    <button id="yellowgreen" onclick="changeImage(this.id);">Yellow Green Flowers</button>
-    <button id="green" onclick="changeImage(this.id);">Green Flowers</button>
-    <button id="white" onclick="changeImage(this.id);">White Flowers</button>
-    <!-- <button id="all" onclick="changeImage(this.id);">All Neighborhoods</button>
-    <button id="arvene" onclick="changeImage(this.id);">Arvene</button>
-    <button id="bayside" onclick="changeImage(this.id);">Bayside</button>
-    <button id="bellerose" onclick="changeImage(this.id);">Bellerose</button>
-    <button id="breezy_point" onclick="changeImage(this.id);">Breezy Point</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button> -->
+    <button id="all" onclick="changeImage(this.id);">All Neighborhoods</button>
+    <button id="Arvene" onclick="changeImage(this.id);">Arvene</button>
+    <button id="Bayside" onclick="changeImage(this.id);">Bayside</button>
+    <button id="Bellerose" onclick="changeImage(this.id);">Bellerose</button>
+    <button id="Breezy_Point" onclick="changeImage(this.id);">Breezy Point</button>
+    <button id="Cambria_Heights" onclick="changeImage(this.id);">Cambria_Heights</button>
+    <button id="East_Elmhurst" onclick="changeImage(this.id);">East_Elmhurst</button>
+    <button id="Far_Rockaway" onclick="changeImage(this.id);">Far_Rockaway</button>
+    <button id="Floral_Park" onclick="changeImage(this.id);">Floral_Park</button>
+    <button id="Howard_Beach" onclick="changeImage(this.id);">Howard_Beach</button>
+    <button id="Glen_Oaks" onclick="changeImage(this.id);">Glen_Oaks</button>
+    <button id="Inwood" onclick="changeImage(this.id);">Inwood</button>
+    <button id="Jackson_Heights" onclick="changeImage(this.id);">Jackson_Heights</button>
+    <button id="Kew_Gardens" onclick="changeImage(this.id);">Kew_Gardens</button>
+    <button id="Little_Neck" onclick="changeImage(this.id);">Little_Neck</button>
+    <button id="Long_Island_City" onclick="changeImage(this.id);">Long_Island_City</button>
+    <button id="Middle_Village" onclick="changeImage(this.id);">Middle_Village</button>
+    <button id="New_Hyde" onclick="changeImage(this.id);">New_Hyde</button>
+    <button id="Rego" onclick="changeImage(this.id);">Rego</button>
+    <button id="Rosedale" onclick="changeImage(this.id);">Rosedale</button>
+    <button id="Woodside" onclick="changeImage(this.id);">Woodside</button>
   </body>
 </html>
