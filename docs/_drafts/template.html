@@ -1,0 +1,45 @@
+---
+layout: default
+title: Template
+---
+
+<!doctype html>
+<html>
+  <head>
+    <script> 
+    let img_srcs = {};
+    img_srcs["all"] = "../images/template/template.png";
+    img_srcs["red"] = "../images/template/Red.png";
+    img_srcs["darkpink"] = "../images/template/Dark_Pink.png";
+    img_srcs["lightpink"] = "../images/template/Light_Pink.png";
+    img_srcs["lightyellow"] = "../images/template/Light_Yellow.png";
+    img_srcs["yellowgreen"] = "../images/template/Yellow_Green.png";
+    img_srcs["green"] = "../images/template/Green.png";
+    img_srcs["white"] = "../images/template/White.png";
+    
+    function changeImage(clicked_id)
+    {
+      var img = document.getElementById("graph");
+      img.src=img_srcs[clicked_id];
+    }
+    </script>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+
+    <img id="graph" src="../images/template/template.png">
+
+    <br>
+
+    <button id="all" onclick="changeImage(this.id);">All Flowers</button>
+    <button id="red" onclick="changeImage(this.id);">Red Flowers</button>
+    <button id="darkpink" onclick="changeImage(this.id);">Dark Pink Flowers</button>
+    <button id="lightpink" onclick="changeImage(this.id);">Light Pink Flowers</button>   
+    <button id="lightyellow" onclick="changeImage(this.id);">Light Yellow Flowers</button>
+    <button id="yellowgreen" onclick="changeImage(this.id);">Yellow Green Flowers</button>
+    <button id="green" onclick="changeImage(this.id);">Green Flowers</button>
+    <button id="white" onclick="changeImage(this.id);">White Flowers</button>
+
+  </body>
+</html>
