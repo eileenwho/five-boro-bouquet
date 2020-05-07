@@ -1,13 +1,6 @@
  ---
  ---
-
- @import "{{ site.theme }}";
-// updating cayman theme
-
 // update theme colors
-// Breakpoints
-$large-breakpoint: 64em !default;
-$medium-breakpoint: 42em !default;
 
 // Headers
 $header-heading-color: #fff !default;
@@ -16,6 +9,11 @@ $header-bg-color-two: #a6ff00ce;
 $header-bg-color-three: #fffb01;
 $header-bg-color-four: #ec94de;
 $header-bg-color-five: #d61212;
+
+ @import "{{ site.theme }}";
+// updating cayman theme
+
+
 
 // reduce size of page-header (banner) and change color
 .page-header {
