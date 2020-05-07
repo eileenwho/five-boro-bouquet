@@ -3,96 +3,42 @@ layout: default
 title: Queens
 ---
 
-
 <!doctype html>
 <html>
   <head>
     <script> 
-// from here: https://stackoverflow.com/questions/8783984/html-button-change-image-source
-    function changeImageWhite()
+    let img_srcs = {};
+    img_srcs["all"] = "../images/queens/Queens.png";
+    img_srcs["red"] = "../images/queens/Red.png";
+    img_srcs["darkpink"] = "../images/queens/Dark_Pink.png";
+    img_srcs["lightpink"] = "../images/queens/Light_Pink.png";
+    img_srcs["lightyellow"] = "../images/queens/Light_Yellow.png";
+    img_srcs["yellowgreen"] = "../images/queens/Yellow_Green.png";
+    img_srcs["green"] = "../images/queens/Green.png";
+    img_srcs["white"] = "../images/queens/White.png";
+    function changeImage(clicked_id)
     {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/White.png";
-    return false;
+      var img = document.getElementById("graph");
+      img.src=img_srcs[clicked_id];
     }
-    function changeImageGreen()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Green.png";
-    return false;
-    }
-        function changeImageRed()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Red.png";
-    return false;
-    }
-
-    function changeImageLightPink()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Light_pink.png";
-    return false;
-    }
-
-    function changeImageDarkPink()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Dark_pink.png";
-    return false;
-    }
-
-    function changeImageLightYellow()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Light_yellow.png";
-    return false;
-    }
-
-    function changeImageYellowGreen()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Yellowgreen.png";
-    return false;
-    }
-
-    function changeImageAll()
-    {
-    var img = document.getElementById("graph");
-    img.src="../images/queens/Queens.png";
-    return false;
-    }
-
-//     function changeImage(color)
-//     {
-//     var img = document.getElementById("graph");
-//     if (color == "white") {
-//       img.src="images/queens/White.png";
-//     } else if (color == "Red") {
-//       img.src="images/queens/Red.png";
-//     }  else if (color == "white") {
-//       img.src="images/queens/Green.png";
-//     }
-    
-//     return false;
-//     }
-   
-
-</script>
+    </script>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
   </head>
   <body>
+
     <img id="graph" src="../images/queens/Queens.png">
+
     <br>
-    <button id="all" onclick="changeImageAll();">All Flowers</button>
-    <button id="white" onclick="changeImageWhite();">White Flowers</button>
-    <button id="green" onclick="changeImageGreen();">Green Flowers</button>
-    <button id="red" onclick="changeImageRed();">Red Flowers</button>
-    <button id="lightpink" onclick="changeImageLightPink();">Light Pink Flowers</button>
-    <button id="darkpink" onclick="changeImageDarkPink();">Dark Pink Flowers</button>
-    <button id="lightyellow" onclick="changeImageLightYellow();">Light Yellow Flowers</button>
-    <button id="yellowgreen" onclick="changeImageYellowGreen();">Yellow Green Flowers</button>
-<!--    try this.id -->
+
+    <button id="all" onclick="changeImage(this.id);">All Flowers</button>
+    <button id="red" onclick="changeImage(this.id);">Red Flowers</button>
+    <button id="darkpink" onclick="changeImage(this.id);">Dark Pink Flowers</button>
+    <button id="lightpink" onclick="changeImage(this.id);">Light Pink Flowers</button>   
+    <button id="lightyellow" onclick="changeImage(this.id);">Light Yellow Flowers</button>
+    <button id="yellowgreen" onclick="changeImage(this.id);">Yellow Green Flowers</button>
+    <button id="green" onclick="changeImage(this.id);">Green Flowers</button>
+    <button id="white" onclick="changeImage(this.id);">White Flowers</button>
+
   </body>
 </html>
