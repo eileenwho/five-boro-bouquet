@@ -3,41 +3,55 @@ layout: default
 title: Queens By Neighborhood
 ---
 
-
 <!doctype html>
 <html>
   <head>
     <script> 
-      let img_srcs = {};
-      img_srcs["all"] = "../images/queens/QueensByNeighborhood.png";
-      img_srcs["red"] = "../images/queens/Red.png";
-      img_srcs["arvene"] = "../images/queens/neighborhoods/Arvene_Grid.png";
-      img_srcs["bayside"] = "../images/queens/neighborhoods/Bayside_Grid.png";
-      img_srcs["bellerose"] = "../images/queens/neighborhoods/Bellerose_Grid.png";
-      img_srcs["breezy_point"] = "../images/queens/neighborhoods/Breezy_Point_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
-      img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+          let img_srcs = {};
+    img_srcs["all"] = "../images/queens/Queens.png";
+    img_srcs["red"] = "../images/queens/Red.png";
+    img_srcs["darkpink"] = "../images/queens/Dark_pink.png";
+    img_srcs["lightpink"] = "../images/queens/Light_pink.png";
+    img_srcs["lightyellow"] = "../images/queens/Light_yellow.png";
+    img_srcs["yellowgreen"] = "../images/queens/Yellowgreen.png";
+    img_srcs["green"] = "../images/queens/Green.png";
+    img_srcs["white"] = "../images/queens/White.png";
+    function changeImage(clicked_id)
+    {
+      var img = document.getElementById("graph");
+      img.src=img_srcs[clicked_id];
+    }
+      // let img_srcs = {};
+      // img_srcs["all"] = "../images/queens/QueensByNeighborhood.png";
+      // img_srcs["red"] = "../images/queens/Red.png";
+      // img_srcs["arvene"] = "../images/queens/neighborhoods/Arvene_Grid.png";
+      // img_srcs["bayside"] = "../images/queens/neighborhoods/Bayside_Grid.png";
+      // img_srcs["bellerose"] = "../images/queens/neighborhoods/Bellerose_Grid.png";
+      // img_srcs["breezy_point"] = "../images/queens/neighborhoods/Breezy_Point_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
+      // img_srcs["change1"] = "../images/queens/neighborhoods/change1_Grid.png";
 
 
-      function changeImage(clicked_id)
-      {
-        var img = document.getElementById("graph");
-        img.src=img_srcs[clicked_id];
-      }
+      // function changeImage(clicked_id)
+      // {
+      //   var img = document.getElementById("graph");
+      //   img.src=img_srcs[clicked_id];
+      // }
+
       </script>
 
     <meta charset="utf-8">
@@ -46,8 +60,7 @@ title: Queens By Neighborhood
   <body>
     <img src="../images/queens/QueensByNeighborhood.png">
     <br>
-    <button id="all" onclick="changeImage(this.id);">All Neighborhoods</button>
-    <button id="red" onclick="changeImage(this.id);">TEST</button>
+    <!-- <button id="all" onclick="changeImage(this.id);">All Neighborhoods</button>
     <button id="arvene" onclick="changeImage(this.id);">Arvene</button>
     <button id="bayside" onclick="changeImage(this.id);">Bayside</button>
     <button id="bellerose" onclick="changeImage(this.id);">Bellerose</button>
@@ -67,6 +80,6 @@ title: Queens By Neighborhood
     <button id="change1" onclick="changeImage(this.id);">change1</button>
     <button id="change1" onclick="changeImage(this.id);">change1</button>
     <button id="change1" onclick="changeImage(this.id);">change1</button>
-    <button id="change1" onclick="changeImage(this.id);">change1</button>
+    <button id="change1" onclick="changeImage(this.id);">change1</button> -->
   </body>
 </html>
