@@ -1,0 +1,90 @@
+ ---
+ ---
+// update theme colors
+
+// Headers
+$header-heading-color: #fff !default;
+$header-bg-color: #11c420 !important;
+$header-bg-color-two: #a6ff00ce !important;
+$header-bg-color-three: #fffb01 !important;
+$header-bg-color-four: #ec94de !important;
+$header-bg-color-five: #d61212 !important;
+
+ @import "{{ site.theme }}";
+// updating cayman theme
+
+
+
+// reduce size of page-header (banner) and change color
+.page-header {
+  color: $header-heading-color;
+  text-align: center;
+  background-color: $header-bg-color !important;
+  background-image: linear-gradient(120deg, $header-bg-color, $header-bg-color-two, $header-bg-color-three, $header-bg-color-four, $header-bg-color-five) !important;
+
+  @include large {
+    padding: 3rem 4rem;
+  }
+
+  @include medium {
+    padding: 2rem 1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
+
+
+// update main content to account for sidebar
+.main-content {
+
+  @include large {
+    margin-left: 10rem; // Same as the end of the sidebar
+    z-index: 2;
+    // top: 0; // Stay at the top 
+  }
+
+  @include medium {
+    margin-left: 10rem; // Same as the end of the sidebar 
+    z-index: 2;  
+    // top: 0; // Stay at the top 
+  }
+
+  @include small {
+    margin-left: 10rem; // Same as the end of the sidebar 
+    z-index: 2; 
+    top: 0; // Stay at the top 
+  }
+}
+// The sidebar menu 
+.sidenav {
+  height: 100%; // Full-height: remove this if you want "auto" height 
+  width: 10rem; // Set the width of the sidebar 
+  position: fixed; // Fixed Sidebar (stay in place on scroll) 
+  z-index: 1; // Stack sidebar over other elements 
+  // top: 0; // start under page banner
+  left: 1rem;
+  overflow-x: hidden; // Disable horizontal scroll 
+  padding-top: 1rem;
+}
+
+// The navigation menu links 
+.sidenav a {
+  padding: 0.4rem 0.5rem 0.4rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #159957;
+  display: block;
+}
+
+// set unordered list to have no bullets for navigation menu links 
+ul.sidenav {
+  list-style-type: none;
+}
+
+// https://jekyllrb.com/tutorials/navigation/#scenario-6-applying-the-active-class-for-the-current-page 
+.result li.active a {
+  color: #11c420;
+  cursor: default;
+}
