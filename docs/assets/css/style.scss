@@ -4,11 +4,11 @@
 
 // Headers
 $header-heading-color: #fff !default;
-$header-bg-color: #11c420;
-$header-bg-color-two: #a6ff00ce;
-$header-bg-color-three: #fffb01;
-$header-bg-color-four: #ec94de;
-$header-bg-color-five: #d61212;
+$header-bg-color: #11c420 !important;
+$header-bg-color-two: #a6ff00ce !important;
+$header-bg-color-three: #fffb01 !important;
+$header-bg-color-four: #ec94de !important;
+$header-bg-color-five: #d61212 !important;
 
  @import "{{ site.theme }}";
 // updating cayman theme
@@ -19,8 +19,8 @@ $header-bg-color-five: #d61212;
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color, $header-bg-color-two, $header-bg-color-three, $header-bg-color-four, $header-bg-color-five);
+  background-color: $header-bg-color !important;
+  background-image: linear-gradient(120deg, $header-bg-color, $header-bg-color-two, $header-bg-color-three, $header-bg-color-four, $header-bg-color-five) !important;
 
   @include large {
     padding: 3rem 4rem;
