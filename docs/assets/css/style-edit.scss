@@ -1,10 +1,17 @@
 ---
 ---
-
 @import "{{ site.theme }}";
 
-$header-heading-color: #fff !default;
+#$header-heading-color: #fff !default;
 $header-bg-color: #11c420 !important;
 $header-bg-color-secondary: #a6ff00ce !important;
 
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #11c420;
+}
