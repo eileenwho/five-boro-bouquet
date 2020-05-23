@@ -1,16 +1,7 @@
 ---
 ---
-@import "{{ site.theme }}";
-
-$header-bg-color: #11c420 !important;
-$header-bg-color-secondary: #a6ff00ce !important;
-
+@import url(../../_sass/copy-jekyll-theme-cayman);
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #11c420;
+  color: blue;
 }
